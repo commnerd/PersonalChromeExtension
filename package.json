@@ -1,0 +1,20 @@
+{
+  "name": "personal-chrome-extension",
+  "version": "1.0.0",
+  "description": "A Swiss Army Knife of tools for various sites.",
+  "main": "background.js",
+  "repository": "git@github.com:commnerd/PersonalChromeExtension.git",
+  "author": "Michael J. Miller <mmiller@spotx.tv>",
+  "license": "MIT",
+  "devDependencies": {
+    "cpy-cli": "^3.1.1",
+    "del-cli": "^3.0.1",
+    "typescript": "^4.1.3"
+  },
+  "scripts": {
+    "prebuild": "del dist/",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "postbuild": "cpy '**/*' '!**/*.ts' ../dist/ --cwd=src/ --no-overwrite --parents"
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Michael J. Miller Chrome Extension",
+    "version": "0.0.1",
+    "description": "A Swiss Army Knife of tools for various sites.",
+    "incognito": "spanning",
+    "background": {
+        "scripts": ["main.js"],
+        "persistent": false
+    },
+    "icons": {
+        "16": "resources/michael-j-miller-logo.ico"
+    },
+    "manifest_version": 2
+}
