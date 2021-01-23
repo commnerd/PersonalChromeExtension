@@ -5,8 +5,9 @@
       "target": "es2020",
       "moduleResolution": "node",
       "outDir": "dist",
+      "types": ["chrome"]
     },
-  
+
     "watchOptions": {
       "watchFile": "useFsEvents",
       "watchDirectory": "useFsEvents",

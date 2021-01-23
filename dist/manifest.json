@@ -1,14 +1,33 @@
 {
-    "name": "Michael J. Miller Chrome Extension",
-    "version": "0.0.1",
-    "description": "A Swiss Army Knife of tools for various sites.",
-    "incognito": "spanning",
-    "background": {
-        "scripts": ["main.js"],
-        "persistent": false
+  "manifest_version": 2,
+  "name": "Michael J. Miller Chrome Extension",
+  "version": "0.0.1",
+  "description": "A Swiss Army Knife of tools for various sites.",
+  "incognito": "spanning",
+  "permissions": [
+    "tabs",
+    "*://*/"
+  ],
+  "background": {
+    "scripts": ["main.js"],
+    "persistent": false
+  },
+  "icons": {
+    "16": "resources/michael-j-miller-dark-16.png",
+    "32": "resources/michael-j-miller-dark-32.png",
+    "64": "resources/michael-j-miller-dark-64.png",
+    "128": "resources/michael-j-miller-dark-128.png",
+    "256": "resources/michael-j-miller-dark-256.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "resources/michael-j-miller-dark-16.png",
+      "32": "resources/michael-j-miller-dark-32.png",
+      "64": "resources/michael-j-miller-dark-64.png",
+      "128": "resources/michael-j-miller-dark-128.png",
+      "256": "resources/michael-j-miller-dark-256.png"
     },
-    "icons": {
-        "16": "resources/michael-j-miller-logo.ico"
-    },
-    "manifest_version": 2
+    "default_title": "MJM Tools",
+    "default_popup": "popup.html"
+  }
 }
